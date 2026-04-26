@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" height="100%" overflow="visible" preserveAspectRatio="none" style="display: block;" viewBox="0 0 65.3333 65.3333" width="100%">
+<g id="Check" opacity="0.52">
+<path d="M32.6667 2.33366C49.4193 2.33366 62.9997 15.914 62.9997 32.6667C62.9997 49.4193 49.4193 62.9997 32.6667 62.9997C15.914 62.9997 2.33366 49.4193 2.33366 32.6667C2.33366 15.914 15.914 2.33366 32.6667 2.33366Z" stroke="var(--stroke-0, white)" stroke-width="4.66667"/>
+<g id="close">
+<path d="M20.2591 48.1776L17.1569 45.0754L29.5657 32.6666L17.1569 20.2578L20.2591 17.1556L32.6679 29.5644L45.0767 17.1556L48.1789 20.2578L35.7701 32.6666L48.1789 45.0754L45.0767 48.1776L32.6679 35.7688L20.2591 48.1776Z" fill="var(--fill-0, white)" id="close_2"/>
+</g>
+</g>
+</svg>

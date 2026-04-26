@@ -580,10 +580,9 @@ section:has(.faq-grid),
 #action .splash-a{display:none}
 #action .container{position:relative;z-index:1}
 .action-head{
-  display:grid;grid-template-columns:1fr 1.1fr;gap:60px;align-items:start;
+  display:grid;grid-template-columns:1fr;gap:40px;align-items:start;
   margin-bottom:60px;
 }
-@media(max-width:900px){.action-head{grid-template-columns:1fr;gap:30px}}
 .action-title h2{
   font-family:'Space Grotesk',sans-serif;font-weight:700;
   font-size:clamp(2.5rem,5.5vw,4.5rem);line-height:.95;letter-spacing:-.02em;
@@ -965,7 +964,7 @@ section:has(.faq-grid),
     radial-gradient(80% 60% at 100% 100%,rgba(180,92,255,.18),transparent 60%),
     linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));
   border:1px solid var(--line-2);
-  display:grid;grid-template-columns:1.3fr 1fr;gap:60px;align-items:center;
+  display:grid;grid-template-columns:1.3fr 1fr;gap:60px;align-items:start;
 }
 @media(max-width:900px){.cta-card{grid-template-columns:1fr;padding:50px 28px;gap:40px}}
 .cta-card h2{margin-bottom:18px}
@@ -995,6 +994,7 @@ footer{padding:60px 0 40px;border-top:1px solid var(--line)}
 .foot-col a{display:block;font-size:.92rem;color:#e8ecf4;padding:4px 0;transition:color .2s}
 .foot-col a:hover{color:#fff}
 .foot-col p{font-size:.9rem;color:var(--muted);margin-top:12px;max-width:280px}
+.foot-col .logo-text{margin-top:14px}
 .foot-bottom{
   padding-top:28px;border-top:1px solid var(--line);
   display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;

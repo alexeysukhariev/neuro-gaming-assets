@@ -618,8 +618,6 @@ section:has(.faq-grid),
   font-family:'Space Grotesk',sans-serif;font-weight:700;
   font-size:clamp(2.4rem,4vw,3.2rem);line-height:1;letter-spacing:-.025em;
   color:#fff;
-  background:linear-gradient(135deg,#fff,var(--accent-2));
-  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
 }
 .action-stat span{font-size:1rem;color:#e8ecf4;line-height:1.45;max-width:22ch;position:relative;z-index:1}
 .action-lead{

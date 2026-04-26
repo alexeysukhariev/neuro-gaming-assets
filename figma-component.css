@@ -617,9 +617,9 @@ section:has(.faq-grid),
 .action-stat strong{
   font-family:'Space Grotesk',sans-serif;font-weight:700;
   font-size:clamp(2.4rem,4vw,3.2rem);line-height:1;letter-spacing:-.025em;
-  color:#fff;
+  color:#fff;-webkit-text-fill-color:initial;background:none;
 }
-.action-stat span{font-size:1rem;color:#e8ecf4;line-height:1.45;max-width:22ch;position:relative;z-index:1}
+.action-stat span{font-size:1rem;color:#e8ecf4;line-height:1.45;max-width:30ch;position:relative;z-index:1;text-wrap:balance}
 .action-lead{
   font-size:clamp(1.05rem,1.3vw,1.2rem);line-height:1.55;
   color:#e8ecf4;margin:0;max-width:52ch;text-wrap:pretty;

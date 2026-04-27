@@ -536,12 +536,12 @@ section:has(.faq-grid),
   margin-bottom:22px;
 }
 .impact-stage-num{
-  color:var(--accent);font-variant-numeric:tabular-nums;
+  color:var(--accent-3);font-variant-numeric:tabular-nums;
 }
 .impact-card.alt .impact-stage-num{color:var(--accent-2)}
 .impact-stage-line{
   flex:none;width:28px;height:1px;
-  background:linear-gradient(90deg,var(--accent),transparent);
+  background:linear-gradient(90deg,var(--accent-3),transparent);
 }
 .impact-card.alt .impact-stage-line{background:linear-gradient(90deg,var(--accent-2),transparent)}
 .impact-title{
@@ -822,21 +822,6 @@ section:has(.faq-grid),
     0 24px 70px -28px rgba(255,138,61,.6);
 }
 .format-tag{font-size:1rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent-2);margin-bottom:14px;font-weight:600}
-.format-badge{
-  position:absolute;top:18px;right:18px;z-index:3;
-  font-family:'Space Grotesk',sans-serif;font-weight:700;
-  font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;
-  padding:6px 12px;border-radius:999px;
-  background:rgba(0,224,208,.15);color:#00e0d0;
-  border:1px solid rgba(0,224,208,.45);
-  box-shadow:0 0 24px rgba(0,224,208,.18);
-  backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
-}
-.format-card.exclusive .format-badge{
-  background:rgba(255,138,61,.15);color:#ff8a3d;
-  border-color:rgba(255,138,61,.45);
-  box-shadow:0 0 24px rgba(255,138,61,.18);
-}
 .format-card h3{color:#fff;margin-bottom:18px}
 .format-list{list-style:none;margin:20px 0 28px}
 .format-list li{
@@ -850,6 +835,8 @@ section:has(.faq-grid),
 .format-desc{color:var(--text);font-size:1rem;margin-bottom:26px;flex:1;line-height:1.55}
 #formats .eyebrow{font-size:1rem;letter-spacing:.18em;padding:.55rem 1rem}
 #formats .section-head{max-width:920px}
+#impact .section-head{max-width:1080px}
+.action-stat span{max-width:none}
 .format-card .btn{align-self:flex-start}
 
 /* Premium addons — enhancer block */
@@ -866,7 +853,9 @@ section:has(.faq-grid),
 .addons-head{display:flex;flex-direction:column;gap:10px;margin-bottom:32px;max-width:680px}
 .addons-eyebrow{
   font-size:1rem;letter-spacing:.2em;text-transform:uppercase;
-  color:var(--accent-3);font-weight:600;
+  font-weight:600;
+  background:linear-gradient(100deg,#ffffff 0%,#a8b2ff 30%,#b45cff 60%,#00e0d0 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
 }
 .addons-head h3{color:#fff;font-size:clamp(1.5rem,2.2vw,1.9rem);margin:0;line-height:1.15;letter-spacing:-.01em}
 .addons-desc{font-size:1rem;color:var(--text);margin:0;line-height:1.55;max-width:56ch}

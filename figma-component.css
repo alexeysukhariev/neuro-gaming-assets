@@ -822,6 +822,21 @@ section:has(.faq-grid),
     0 24px 70px -28px rgba(255,138,61,.6);
 }
 .format-tag{font-size:1rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent-2);margin-bottom:14px;font-weight:600}
+.format-badge{
+  position:absolute;top:18px;right:18px;z-index:3;
+  font-family:'Space Grotesk',sans-serif;font-weight:700;
+  font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;
+  padding:6px 12px;border-radius:999px;
+  background:rgba(0,224,208,.15);color:#00e0d0;
+  border:1px solid rgba(0,224,208,.45);
+  box-shadow:0 0 24px rgba(0,224,208,.18);
+  backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+}
+.format-card.exclusive .format-badge{
+  background:rgba(255,138,61,.15);color:#ff8a3d;
+  border-color:rgba(255,138,61,.45);
+  box-shadow:0 0 24px rgba(255,138,61,.18);
+}
 .format-card h3{color:#fff;margin-bottom:18px}
 .format-list{list-style:none;margin:20px 0 28px}
 .format-list li{
@@ -936,6 +951,12 @@ section:has(.faq-grid),
 
 /* ============ FAQ ============ */
 .faq-grid{max-width:820px;margin:0 auto}
+.faq-cta{
+  max-width:820px;margin:48px auto 0;text-align:center;
+  display:flex;flex-direction:column;align-items:center;gap:18px;
+}
+.faq-cta p{color:var(--text);font-size:1.05rem;margin:0}
+.faq-cta .btn{align-self:center}
 .faq-item{
   border:1px solid var(--line);border-radius:var(--radius-sm);
   margin-bottom:12px;background:rgba(255,255,255,.02);
@@ -992,6 +1013,10 @@ section:has(.faq-grid),
 }
 .cta-form textarea{min-height:96px;resize:vertical}
 .cta-form button{margin-top:6px;justify-content:center}
+.cta-form-note{
+  margin:8px 0 0;font-size:.85rem;color:rgba(232,236,244,.6);
+  text-align:center;line-height:1.5;
+}
 
 /* ============ FOOTER ============ */
 footer{padding:60px 0 40px;border-top:1px solid var(--line)}

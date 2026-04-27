@@ -1013,7 +1013,7 @@ section:has(.faq-grid),
 }
 .cta-form textarea{min-height:96px;resize:vertical}
 .cta-form button{margin-top:6px;justify-content:center}
-.cta-form-note{
+.cta-form .cta-form-note{
   margin:8px 0 0;font-size:.85rem;color:rgba(232,236,244,.6);
   text-align:center;line-height:1.5;
 }

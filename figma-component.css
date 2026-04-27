@@ -335,11 +335,17 @@ section:has(.faq-grid),
   margin:0 auto;
 }
 .hero h1{
-  margin:22px auto 20px;text-align:center;
+  margin:22px auto 14px;text-align:center;
   font-size:clamp(2.4rem,5.5vw,4rem);line-height:1.05;
   text-wrap:balance;max-width:860px;
 }
-.hero p.lead{font-size:clamp(1rem,1.2vw,1.2rem);color:var(--text);max-width:620px;margin:0 auto;text-align:center;line-height:1.5;text-wrap:pretty}
+.hero h2.hero-subtitle{
+  margin:0 auto 22px;text-align:center;
+  font-family:'Space Grotesk',sans-serif;font-weight:600;
+  font-size:clamp(1.4rem,2.4vw,2rem);line-height:1.2;
+  color:#fff;max-width:760px;text-wrap:balance;letter-spacing:-.005em;
+}
+.hero p.lead{font-size:clamp(1.15rem,1.5vw,1.4rem);color:var(--text);max-width:560px;margin:0 auto;text-align:center;line-height:1.5;text-wrap:balance}
 .hero-cta{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap;justify-content:center}
 .hero-meta{
   display:flex;justify-content:center;align-items:center;flex-wrap:wrap;
@@ -361,6 +367,8 @@ section:has(.faq-grid),
 @media(max-width:640px){
   .hero{min-height:auto;padding:110px 0 60px}
   .hero h1{font-size:clamp(2rem,9vw,2.8rem)}
+  .hero h2.hero-subtitle{font-size:clamp(1.15rem,4.6vw,1.5rem);margin-bottom:18px}
+  .hero p.lead{font-size:clamp(1.05rem,3.6vw,1.2rem)}
   .hero-meta{flex-direction:column;gap:.7rem;max-width:320px;padding-top:22px;margin-top:40px}
   .hero-meta-sep{display:none}
   /* Darker overlay on mobile — the video is full-bleed so text legibility
@@ -596,7 +604,8 @@ section:has(.faq-grid),
   padding:32px 28px;border-radius:var(--radius-sm);
   background:linear-gradient(180deg,rgba(107,123,255,.1),rgba(180,92,255,.04));
   border:1px solid var(--line-2);
-  display:flex;flex-direction:column;gap:12px;
+  display:flex;flex-direction:column;align-items:center;gap:12px;
+  text-align:center;
   position:relative;overflow:hidden;
   transition:transform .3s,border-color .3s,box-shadow .3s;
 }
@@ -620,7 +629,7 @@ section:has(.faq-grid),
   background:linear-gradient(135deg,#fff 30%,var(--accent-2));
   -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
 }
-.action-stat span{font-size:1rem;color:#e8ecf4;line-height:1.45;max-width:22ch;position:relative;z-index:1}
+.action-stat span{font-size:1rem;color:#e8ecf4;line-height:1.45;max-width:22ch;text-wrap:balance;position:relative;z-index:1}
 .action-lead{
   font-size:clamp(1.05rem,1.3vw,1.2rem);line-height:1.55;
   color:#e8ecf4;margin:0;max-width:52ch;text-wrap:pretty;
@@ -825,6 +834,7 @@ section:has(.faq-grid),
 }
 .format-desc{color:var(--text);font-size:1rem;margin-bottom:26px;flex:1;line-height:1.55}
 #formats .eyebrow{font-size:1rem;letter-spacing:.18em;padding:.55rem 1rem}
+#formats .section-head{max-width:920px}
 .format-card .btn{align-self:flex-start}
 
 /* Premium addons — enhancer block */

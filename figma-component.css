@@ -839,6 +839,7 @@ section:has(.faq-grid),
 #formats .eyebrow{font-size:1rem;letter-spacing:.18em;padding:.55rem 1rem}
 #formats .section-head{max-width:920px}
 #impact .section-head{max-width:1160px}
+#concept .section-head{max-width:1140px}
 .action-stat span{max-width:none}
 .format-card .btn{align-self:flex-start}
 

@@ -1033,15 +1033,18 @@ section:has(.faq-grid),
   font-size:.95rem;color:#e8ecf4;
 }
 .cta-radio:hover{border-color:rgba(180,92,255,.35);background:rgba(180,92,255,.04)}
-.cta-radio input[type="radio"]{
+.cta-form .cta-radio input[type="radio"]{
   appearance:none;-webkit-appearance:none;
-  width:18px;height:18px;border-radius:50%;
-  border:2px solid rgba(255,255,255,.25);
+  width:18px;height:18px;min-width:18px;min-height:18px;
+  padding:0;margin:0;
+  border-radius:50%;
+  border:2px solid rgba(255,255,255,.35);
   background:transparent;flex:none;cursor:pointer;
   display:grid;place-items:center;
+  box-sizing:border-box;
   transition:border-color .2s;
 }
-.cta-radio input[type="radio"]:checked{
+.cta-form .cta-radio input[type="radio"]:checked{
   border-color:#b45cff;
 }
 .cta-radio input[type="radio"]:checked::after{

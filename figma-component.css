@@ -394,10 +394,19 @@ section:has(.faq-grid),
 }
 .brands .marquee-track{animation-duration:55s}
 .brands .marquee-track img{
-  height:36px;width:auto;max-width:130px;object-fit:contain;
-  opacity:.7;filter:brightness(0) invert(1);
+  height:52px;max-width:220px;opacity:.75;
+  filter:brightness(0) invert(1);
 }
-@media(max-width:640px){.brands{padding:60px 0}.brands .marquee-track img{height:30px;max-width:110px}}
+.brands .marquee-track img[src*="iot%20sparks"],
+.brands .marquee-track img[src*="makusi"]{
+  height:34px;
+}
+@media(max-width:640px){
+  .brands{padding:60px 0}
+  .brands .marquee-track img{height:40px}
+  .brands .marquee-track img[src*="iot%20sparks"],
+  .brands .marquee-track img[src*="makusi"]{height:26px}
+}
 
 /* ============ MARQUEE / PARTNERS ============ */
 .partners{padding:44px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:rgba(255,255,255,.015)}

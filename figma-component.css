@@ -1015,6 +1015,57 @@ section:has(.faq-grid),
   margin:8px 0 0;font-size:.85rem;color:rgba(232,236,244,.6);
   text-align:center;line-height:1.5;
 }
+.cta-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:560px){.cta-row{grid-template-columns:1fr}}
+.cta-radio-group{
+  display:flex;flex-direction:column;gap:10px;
+  border:0;padding:0;margin:0 0 4px;
+}
+.cta-radio-group legend{
+  font-size:.95rem;color:var(--text);margin-bottom:8px;padding:0;
+  font-weight:500;
+}
+.cta-radio{
+  display:flex;align-items:center;gap:12px;cursor:pointer;
+  padding:12px 14px;border-radius:10px;
+  background:rgba(255,255,255,.025);border:1px solid var(--line);
+  transition:border-color .2s,background .2s;
+  font-size:.95rem;color:#e8ecf4;
+}
+.cta-radio:hover{border-color:rgba(180,92,255,.35);background:rgba(180,92,255,.04)}
+.cta-radio input[type="radio"]{
+  appearance:none;-webkit-appearance:none;
+  width:18px;height:18px;border-radius:50%;
+  border:2px solid rgba(255,255,255,.25);
+  background:transparent;flex:none;cursor:pointer;
+  display:grid;place-items:center;
+  transition:border-color .2s;
+}
+.cta-radio input[type="radio"]:checked{
+  border-color:#b45cff;
+}
+.cta-radio input[type="radio"]:checked::after{
+  content:"";width:8px;height:8px;border-radius:50%;
+  background:linear-gradient(135deg,var(--accent),var(--accent-2));
+}
+.cta-radio:has(input:checked){
+  border-color:rgba(180,92,255,.55);
+  background:linear-gradient(135deg,rgba(168,178,255,.08),rgba(180,92,255,.07),rgba(0,224,208,.08));
+}
+.cta-thanks{
+  display:flex;flex-direction:column;align-items:center;text-align:center;
+  padding:20px 0;gap:18px;
+}
+.cta-thanks-icon{
+  width:72px;height:72px;border-radius:50%;display:grid;place-items:center;
+  background:linear-gradient(135deg,rgba(168,178,255,.18),rgba(180,92,255,.18) 50%,rgba(0,224,208,.18));
+  border:1px solid rgba(180,92,255,.45);
+  box-shadow:0 0 40px rgba(180,92,255,.25);
+}
+.cta-thanks-icon svg{width:32px;height:32px;stroke:#fff;fill:none}
+.cta-thanks h2{margin:0}
+.cta-thanks p{color:var(--text);font-size:1.05rem;margin:0;max-width:480px;line-height:1.55}
+.cta-thanks .btn{margin-top:8px}
 
 /* ============ FOOTER ============ */
 footer{padding:60px 0 40px;border-top:1px solid var(--line);background:#000;position:relative;z-index:1}

@@ -1043,6 +1043,7 @@ section:has(.faq-grid),
 .cta-radio-group{
   display:flex;flex-direction:column;gap:10px;
   border:0;padding:0;margin:0 0 4px;
+  min-inline-size:0;min-width:0;
 }
 .cta-radio-group legend{
   font-size:.95rem;color:var(--text);margin-bottom:8px;padding:0;
@@ -1128,6 +1129,24 @@ footer{padding:60px 0 40px;border-top:1px solid var(--line);background:#000;posi
 
 /* ============ SELECTION ============ */
 ::selection{background:rgba(180,92,255,.45);color:#fff}
+
+/* Narrow mobile (<= 380px / iPhone SE etc.): tighten paddings + drop heading min sizes */
+@media(max-width:380px){
+  section{padding:80px 0}
+  h2{font-size:clamp(1.55rem,7vw,2.4rem)}
+  h3{font-size:clamp(1.2rem,5vw,1.5rem)}
+  .hero h1{font-size:clamp(1.75rem,8.5vw,2.6rem)}
+  .hero h2.hero-subtitle{font-size:clamp(1.1rem,5vw,1.4rem)}
+  .hero p.lead{font-size:clamp(.98rem,4vw,1.1rem)}
+  .impact-card{padding:32px 22px}
+  .format-card{padding:32px 22px}
+  .action-stat{padding:26px 22px}
+  .testi-card{padding:28px 24px}
+  .addons{padding:30px 20px}
+  .addons-item{padding:18px 16px}
+  .cta-card{padding:36px 20px}
+  .faq-item .faq-q{padding:18px 18px}
+}
 
 /* Scrollbar */
 ::-webkit-scrollbar{width:10px;height:10px}

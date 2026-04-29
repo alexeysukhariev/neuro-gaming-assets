@@ -615,7 +615,7 @@ section:has(.faq-grid),
 }
 .action-intro{display:flex;flex-direction:column;gap:24px;padding-top:18px}
 .action-stats-row{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-@media(max-width:760px){.action-stats-row{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:880px){.action-stats-row{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:520px){.action-stats-row{grid-template-columns:1fr}}
 .action-stat{
   padding:32px 28px;border-radius:var(--radius-sm);
@@ -1094,6 +1094,10 @@ section:has(.faq-grid),
 footer{padding:60px 0 40px;border-top:1px solid var(--line);background:#000;position:relative;z-index:1}
 .foot-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:40px;margin-bottom:40px}
 @media(max-width:800px){.foot-grid{grid-template-columns:1fr 1fr;gap:32px}}
+@media(max-width:560px){
+  .foot-grid{grid-template-columns:1fr;gap:28px;margin-bottom:32px}
+  .foot-col p{max-width:none}
+}
 .foot-col h5{
   font-family:'Space Grotesk',sans-serif;font-size:.8rem;letter-spacing:.2em;
   text-transform:uppercase;color:var(--muted);margin-bottom:16px;font-weight:600;

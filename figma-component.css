@@ -1019,6 +1019,7 @@ section:has(.faq-grid),
   display:grid;grid-template-columns:1.3fr 1fr;gap:60px;align-items:start;
 }
 @media(max-width:900px){.cta-card{grid-template-columns:1fr;padding:50px 28px;gap:40px}}
+.cta-card > *{min-width:0}
 .cta-card h2{margin-bottom:18px}
 .cta-card p{color:#e8ecf4}
 .cta-form{display:flex;flex-direction:column;gap:14px}

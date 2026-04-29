@@ -525,7 +525,7 @@ section:has(.faq-grid),
   background:linear-gradient(180deg,transparent 65%,rgba(5,6,10,.45));
 }
 @media(max-width:640px){
-  .photo-carousel,.impact .photo-carousel{margin:36px 0 44px}
+  .photo-carousel,.impact .photo-carousel{margin-top:36px;margin-bottom:44px}
   .photo-card{width:62vw}
 }
 .splash{display:none}

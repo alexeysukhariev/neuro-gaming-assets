@@ -526,7 +526,7 @@ section:has(.faq-grid),
 }
 @media(max-width:640px){
   .photo-carousel,.impact .photo-carousel{margin-top:36px;margin-bottom:44px}
-  .photo-card{width:62vw}
+  .photo-card{width:clamp(180px,50vw,260px)}
 }
 .splash{display:none}
 .impact .container{position:relative;z-index:1}

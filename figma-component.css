@@ -1082,6 +1082,7 @@ section:has(.faq-grid),
 .cta-thanks{
   display:flex;flex-direction:column;align-items:center;text-align:center;
   padding:20px 0;gap:18px;
+  grid-column:1 / -1;
 }
 .cta-thanks-icon{
   width:72px;height:72px;border-radius:50%;display:grid;place-items:center;

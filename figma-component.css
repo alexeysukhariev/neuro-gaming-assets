@@ -2,7 +2,7 @@
 
 /* ============ RESET & BASE ============ */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:96px}
+html{scroll-behavior:smooth;scroll-padding-top:88px}
 body{
   font-family:'Inter',system-ui,-apple-system,sans-serif;
   background:#05060a;
@@ -188,10 +188,9 @@ section:has(.faq-grid),
 /* ============ NAV ============ */
 .nav{
   position:fixed;top:0;left:0;right:0;z-index:50;
-  padding:18px 0;transition:padding .35s ease,background .35s ease,border-color .35s ease;
+  padding:0;transition:background .35s ease,border-color .35s ease;
 }
 .nav.scrolled{
-  padding:12px 0;
   background:rgba(5,6,10,.7);
   backdrop-filter:blur(18px) saturate(160%);
   border-bottom:1px solid var(--line);
@@ -218,9 +217,9 @@ section:has(.faq-grid),
 .logo-mark svg{position:relative;z-index:1;width:18px;height:18px;fill:#fff}
 /* New full-lockup logo (square mark + "NEUROGAMING" wordmark + tagline)
    served as a single SVG file per language. Ratio is ~735:292 (≈2.52:1).
-   Sized large enough that the wordmark stays legible — 40px was too small. */
-.logo-img{height:56px;width:auto;display:block}
-@media(max-width:480px){.logo-img{height:44px}}
+   Nav has zero vertical padding — the logo height IS the nav height. */
+.logo-img{height:80px;width:auto;display:block}
+@media(max-width:480px){.logo-img{height:56px}}
 footer .logo-img{height:72px}
 .nav-links{display:flex;gap:2rem;align-items:center}
 .nav-links a{
@@ -263,7 +262,7 @@ footer .logo-img{height:72px}
 .nav-links-cta{display:none}
 @media(max-width:960px){
   .nav-links{
-    position:fixed;inset:72px 16px auto 16px;
+    position:fixed;inset:64px 16px auto 16px;
     flex-direction:column;align-items:stretch;gap:0;
     background:rgba(10,13,22,.96);border:1px solid var(--line);
     border-radius:16px;padding:14px;backdrop-filter:blur(18px);

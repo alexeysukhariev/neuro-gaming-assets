@@ -2,7 +2,7 @@
 
 /* ============ RESET & BASE ============ */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:80px}
+html{scroll-behavior:smooth;scroll-padding-top:96px}
 body{
   font-family:'Inter',system-ui,-apple-system,sans-serif;
   background:#05060a;
@@ -217,10 +217,11 @@ section:has(.faq-grid),
 }
 .logo-mark svg{position:relative;z-index:1;width:18px;height:18px;fill:#fff}
 /* New full-lockup logo (square mark + "NEUROGAMING" wordmark + tagline)
-   served as a single SVG file per language. Ratio is ~735:292 (≈2.52:1). */
-.logo-img{height:40px;width:auto;display:block}
-@media(max-width:480px){.logo-img{height:34px}}
-footer .logo-img{height:48px}
+   served as a single SVG file per language. Ratio is ~735:292 (≈2.52:1).
+   Sized large enough that the wordmark stays legible — 40px was too small. */
+.logo-img{height:56px;width:auto;display:block}
+@media(max-width:480px){.logo-img{height:44px}}
+footer .logo-img{height:72px}
 .nav-links{display:flex;gap:2rem;align-items:center}
 .nav-links a{
   font-size:.92rem;color:var(--muted);font-weight:500;position:relative;

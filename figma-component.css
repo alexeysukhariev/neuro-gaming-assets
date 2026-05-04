@@ -216,6 +216,11 @@ section:has(.faq-grid),
   content:"";position:absolute;inset:1.5px;border-radius:8.5px;background:#05060a;
 }
 .logo-mark svg{position:relative;z-index:1;width:18px;height:18px;fill:#fff}
+/* New full-lockup logo (square mark + "NEUROGAMING" wordmark + tagline)
+   served as a single SVG file per language. Ratio is ~735:292 (≈2.52:1). */
+.logo-img{height:40px;width:auto;display:block}
+@media(max-width:480px){.logo-img{height:34px}}
+footer .logo-img{height:48px}
 .nav-links{display:flex;gap:2rem;align-items:center}
 .nav-links a{
   font-size:.92rem;color:var(--muted);font-weight:500;position:relative;
